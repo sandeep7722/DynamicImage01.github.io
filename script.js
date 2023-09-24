@@ -71,13 +71,27 @@ const imageUrls = [
 // Function to load a random image
 function loadRandomImage() {
     // Get a random index within the array length
-    const randomIndex = Math.floor(Math.random() * imageUrls.length);
+    const randomIndex1 = Math.floor(Math.random() * imageUrls.length);
+    console.log(randomIndex1);
+    
+    const randomIndex2 = Math.floor(Math.random() * imageUrls.length);
+    console.log(randomIndex2);
+    const randomIndex3 = Math.floor(Math.random() * imageUrls.length);
+    console.log(randomIndex3);
+    const randomIndex4 = Math.floor(Math.random() * imageUrls.length);
+    console.log(randomIndex4);
 
     // Get the random image URL
-    const randomImageUrl = imageUrls[randomIndex];
+    const randomImageUrl1 = imageUrls[randomIndex1];
+    const randomImageUrl2 = imageUrls[randomIndex2];
+    const randomImageUrl3 = imageUrls[randomIndex3];
+    const randomImageUrl4 = imageUrls[randomIndex4];
 
     // Set the random image URL as the src attribute of the <img> element
-    document.getElementById('randomImage').src = randomImageUrl;
+    document.getElementById('randomImage1').src = randomImageUrl1;
+    document.getElementById('randomImage2').src = randomImageUrl2;
+    document.getElementById('randomImage3').src = randomImageUrl3;
+    document.getElementById('randomImage4').src = randomImageUrl4;
 }
 
 // Call the function to load a random image when the page loads
